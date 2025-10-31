@@ -8,32 +8,21 @@ Dashboard interativo que apresenta despesas da Assembleia Legislativa do Paraná
  - Contratos e licitações (valores, fornecedores, prazos, modalidades);
  - Comparativos históricos e gráficos para análise orçamentária.
 
+<code>
 assembleia-dashboard/
-│
-├── data/                     # Dados brutos e tratados
-│   ├── despesas.csv
-│   ├── contratos.csv
-│   ├── pessoal.csv
-│   └── licitacoes.csv
-│
+├── data/
+│ └── despesas_pessoal_sample.csv
 ├── src/
-│   ├── main.py               # Ponto de entrada Streamlit
-│   ├── pages/
-│   │   ├── despesas.py
-│   │   ├── contratos.py
-│   │   ├── pessoal.py
-│   │   └── licitacoes.py
-│   ├── utils/
-│   │   ├── loaders.py        # Funções de carga e atualização de dados
-│   │   └── charts.py         # Geração de gráficos e análises
-│
+│ ├── main.py
+│ └── utils/
+│ ├── loaders.py
+│ └── charts.py
 ├── requirements.txt
 ├── README.md
-└── .streamlit/
-    └── config.toml           # Tema, layout e modo wide
+└── .streamlit/config.toml
+</code>
 
-
-Layout do Dashboard
+<h2>Layout do Dashboard</h2>
 
 O menu lateral (sidebar) permitirá navegar entre as seções:
  - Despesas Parlamentares
